@@ -78,20 +78,105 @@
 // console.log("Ja se zovem" + name);
 // console.log(`Ja se zovem ${name} i idem u ${school}`);
 
-for (let i = 0; i < 10; i++) {
-  if (i % 2 === 0) {
-    console.log(i);
-  } else if (i % 3 === 0) {
-    console.log("nesto");
-  } else if (i % 8 === 0) {
-    console.log("nesto drugo");
-  } else {
-    console.log("poslednje else");
-  }
-}
+// for (let i = 0; i < 10; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   } else if (i % 3 === 0) {
+//     console.log("nesto");
+//   } else if (i % 8 === 0) {
+//     console.log("nesto drugo");
+//   } else {
+//     console.log("poslednje else");
+//   }
+// }
 
 // for petlja
 // i ide do 100
 // i deljiv sa 3 onda console.log('fizz')
 // i deljiv sa 5 onda console.log("buzz")
 // i deljiv i sa 5 i sa 3 console.log('fizzbuzz')
+
+///////////////////////////////2. CAS////////////////////////////////////////////////
+
+// const tacno = 4;
+// const netacno = 3;
+// console.log(4 === 5 && 3 === 3);
+// console.log(4 === 5 || 3 === 3);
+
+// for (let i = 0; i < 40; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log("fizzbuzz");
+//   } else if (i % 5 === 0) {
+//     console.log("buzz");
+//   } else if (i % 3 === 0) {
+//     console.log("fizz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+// let a = 0;
+
+// console.log(a);
+// if (5 > 10) {
+//   a = 3;
+// } else {
+//   a = 16;
+// }
+
+// 5 > 10 ? (a = 3) : (a = 16);
+// console.log(a);
+
+// const cars = ["bmw", "mercedes-benz", "volskwagen", "audi", "bentley"];
+// const secondCars = ["renault", "citreon", "peugeot"];
+
+// console.log(cars);
+// const bothArray = cars.concat(secondCars);
+// console.log(bothArray);
+// console.log(cars);
+
+// console.log(cars.reverse());
+// console.log(positiveNumber.every((el) => el > 0));
+// positiveNumber.some();
+// console.log(positiveNumber.some((el) => el < 0));
+
+// const positiveNumber = [2, 3, 45, 5, 6, 6, -10, -3];
+// var reversedArray = [];
+
+// for (let i = positiveNumber.length - 1; i >= 0; i--) {
+//   console.log(positiveNumber[i], `${i} index elementa niza`);
+//   reversedArray.push(positiveNumber[i]);
+// }
+
+// console.log(positiveNumber);
+// console.log(reversedArray);
+
+// let stringarray = positiveNumber.join("");
+// console.log(stringarray);
+// console.log(stringarray.split(""));
+
+// console.log(3);
+
+let firstTask = "laptop"; //potpal
+let secondTask = "autobus"; // subotua
+
+const numbers = [3, 5, 7, 32, 67, 22];
+
+// console.log(Math.max.apply(null, numbers));
+
+// let najveciBroj = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+//   console.log(numbers[i], najveciBroj);
+//   if (numbers[i] > najveciBroj) {
+//     najveciBroj = numbers[i];
+//   }
+// }
+
+// console.log(najveciBroj);
+
+const cars = ["bmw", "mercedes-benz", "volskwagen", "audi", "bentley"];
+console.log(cars);
+for (let car in cars) {
+  console.log(cars[car]);
+}
