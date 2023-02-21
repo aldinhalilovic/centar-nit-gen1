@@ -1,3 +1,4 @@
+////////////////////////////1.cas///////////////////////////////////
 // console.log(2 == "2");
 // console.log(2 === "2");
 
@@ -157,10 +158,10 @@
 
 // console.log(3);
 
-let firstTask = "laptop"; //potpal
-let secondTask = "autobus"; // subotua
+// let firstTask = "laptop"; //potpal
+// let secondTask = "autobus"; // subotua
 
-const numbers = [3, 5, 7, 32, 67, 22];
+// const numbers = [3, 5, 7, 32, 67, 22];
 
 // console.log(Math.max.apply(null, numbers));
 
@@ -175,8 +176,137 @@ const numbers = [3, 5, 7, 32, 67, 22];
 
 // console.log(najveciBroj);
 
-const cars = ["bmw", "mercedes-benz", "volskwagen", "audi", "bentley"];
-console.log(cars);
-for (let car in cars) {
-  console.log(cars[car]);
+// const cars = ["bmw", "mercedes-benz", "volskwagen", "audi", "bentley"];
+// console.log(cars);
+// for (let car in cars) {
+//   console.log(cars[car]);
+// }
+
+//////////////////////////////////3. CAS////////////////////////////////////
+
+// function addTwo(argument1, argument2) {
+//   // console.log(argument1, argument2);
+
+//   let zbir = argument1 + argument2;
+//   // console.log(zbir);
+//   return zbir;
+//   console.log(zbir);
+//   console.log(zbir);
+//   console.log(zbir);
+//   console.log(zbir);
+//   console.log(zbir);
+//   console.log(zbir);
+//   console.log(zbir);
+//   console.log(zbir);
+//   console.log(zbir);
+//   console.log(zbir);
+//   console.log(zbir);
+// }
+
+// addTwo();
+
+// const addThree = function () {};
+
+// addThree();
+
+// const addFour = () => {};
+
+// addTwo(2, 1);
+// console.log(addTwo(2, 1));
+
+// const konacanZbir = addTwo(2, 1);
+// console.log(konacanZbir);
+
+// const someArray = [1, 3, 5, 6, 7, 73, 45];
+
+// // const myCallback = (el) => console.log(el);
+
+// // someArray.map(myCallback);
+
+// // someArray.forEach(myCallback);
+
+// const ourForEach = (array, callback) => {
+//   for (let i = 0; i < array.length; i++) {
+//     callback(array[i]);
+//   }
+// };
+
+// // ourForEach(someArray, console.log);
+
+// const ourMapFn = (array, callback) => {
+//   let a = [];
+//   for (let i = 0; i < array.length; i++) {
+//     a.push(callback(array[i]));
+//   }
+//   return a;
+// };
+
+// // const myCallBack = (el) => el * 2;
+
+// // console.log(ourMapFn(someArray, myCallBack));
+
+// const ourFilterFn = (array, callback) => {
+//   let a = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (callback(array[i])) {
+//       a.push(array[i]);
+//     }
+//   }
+//   return a;
+// };
+
+// console.log(ourFilterFn(someArray, (num) => num % 2 === 0));
+
+// // const secondTry = (array, callback) => {
+// const secondTry = (callback, array) => {
+//   let a = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (callback(array[i], i, array)) a.push(array[i]);
+//   }
+//   return a;
+// };
+
+// // console.log(secondTry(someArray, (num) => num % 2 === 0));
+// console.log(secondTry((num) => num % 2 === 0, someArray));
+
+/////// OBJEKTI
+
+const classRoom = {
+  subject: "Math",
+  room: "3B",
+  student: {
+    age: 32,
+    name: "Aldin",
+    saySomething() {
+      console.log(this.name);
+    },
+  },
+  sayHello() {
+    console.log(this.student.age);
+  },
+};
+
+classRoom.sayHello();
+
+function sayHelloToClassroom() {
+  console.log(this, "iz funkcije");
 }
+
+sayHelloToClassroom.call(classRoom);
+
+// console.log(classRoom);
+// console.log(classRoom.subject);
+// console.log(classRoom.room);
+// console.log(classRoom["subject"]);
+// console.log(classRoom.student.name);
+
+const classRoom2 = [
+  { name: "aldin", age: [10, 3, 5, 7] },
+  { name: "mehmed", age: 21 },
+  { name: "tarik", age: 53 },
+  { name: "alija", age: 10 },
+  { name: "nikola", age: 10 },
+  { name: "petar", age: 13 },
+];
+
+// console.log(this);
