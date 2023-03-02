@@ -555,44 +555,44 @@ const miniCalculator = () => {
 
 // miniCalculator();
 
-const ourClass = [
-  {
-    name: "Aldin",
-    lastName: "Rasljanin",
-    age: 52,
-    school: {
-      class: "III-3",
-      name: "tehnicka",
-    },
-  },
-  {
-    name: "Nerma",
-    lastName: "Hot",
-    age: 17,
-    school: {
-      class: "III-3",
-      name: "gimnazija",
-    },
-  },
-  {
-    name: "Seid",
-    lastName: "Alomerovic",
-    age: 25,
-    school: {
-      class: "III-3",
-      name: "tekstilna",
-    },
-  },
-  {
-    name: "Ihsan",
-    lastName: "Curic",
-    age: 23,
-    school: {
-      class: "III-3",
-      name: "ekonomska",
-    },
-  },
-];
+// const ourClass = [
+//   {
+//     name: "Aldin",
+//     lastName: "Rasljanin",
+//     age: 52,
+//     school: {
+//       class: "III-3",
+//       name: "tehnicka",
+//     },
+//   },
+//   {
+//     name: "Nerma",
+//     lastName: "Hot",
+//     age: 17,
+//     school: {
+//       class: "III-3",
+//       name: "gimnazija",
+//     },
+//   },
+//   {
+//     name: "Seid",
+//     lastName: "Alomerovic",
+//     age: 25,
+//     school: {
+//       class: "III-3",
+//       name: "tekstilna",
+//     },
+//   },
+//   {
+//     name: "Ihsan",
+//     lastName: "Curic",
+//     age: 23,
+//     school: {
+//       class: "III-3",
+//       name: "ekonomska",
+//     },
+//   },
+// ];
 
 // console.log(ourClass);
 // console.log(ourClass[2].lastName);
@@ -631,126 +631,126 @@ const ourClass = [
 
 /// VAR LET CONST, https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-reduce-method-to-analyze-data
 // spread operator
-
-const watchList = [
-  {
-    Title: "Inception",
-    Year: "2010",
-    Rated: "PG-13",
-    Released: "16 Jul 2010",
-    Runtime: "148 min",
-    Genre: "Action, Adventure, Crime",
-    Director: "Christopher Nolan",
-    Writer: "Christopher Nolan",
-    Actors: "Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page, Tom Hardy",
-    Plot: "A thief, who steals corporate secrets through use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO.",
-    Language: "English, Japanese, French",
-    Country: "USA, UK",
-    Awards: "Won 4 Oscars. Another 143 wins & 198 nominations.",
-    Poster:
-      "http://ia.media-imdb.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
-    Metascore: "74",
-    imdbRating: "8.8",
-    imdbVotes: "1,446,708",
-    imdbID: "tt1375666",
-    Type: "movie",
-    Response: "True",
-  },
-  {
-    Title: "Interstellar",
-    Year: "2014",
-    Rated: "PG-13",
-    Released: "07 Nov 2014",
-    Runtime: "169 min",
-    Genre: "Adventure, Drama, Sci-Fi",
-    Director: "Christopher Nolan",
-    Writer: "Jonathan Nolan, Christopher Nolan",
-    Actors: "Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow",
-    Plot: "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
-    Language: "English",
-    Country: "USA, UK",
-    Awards: "Won 1 Oscar. Another 39 wins & 132 nominations.",
-    Poster:
-      "http://ia.media-imdb.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX300.jpg",
-    Metascore: "74",
-    imdbRating: "8.6",
-    imdbVotes: "910,366",
-    imdbID: "tt0816692",
-    Type: "movie",
-    Response: "True",
-  },
-  {
-    Title: "The Dark Knight",
-    Year: "2008",
-    Rated: "PG-13",
-    Released: "18 Jul 2008",
-    Runtime: "152 min",
-    Genre: "Action, Adventure, Crime",
-    Director: "Christopher Nolan",
-    Writer:
-      "Jonathan Nolan (screenplay), Christopher Nolan (screenplay), Christopher Nolan (story), David S. Goyer (story), Bob Kane (characters)",
-    Actors: "Christian Bale, Heath Ledger, Aaron Eckhart, Michael Caine",
-    Plot: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.",
-    Language: "English, Mandarin",
-    Country: "USA, UK",
-    Awards: "Won 2 Oscars. Another 146 wins & 142 nominations.",
-    Poster:
-      "http://ia.media-imdb.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
-    Metascore: "82",
-    imdbRating: "9.0",
-    imdbVotes: "1,652,832",
-    imdbID: "tt0468569",
-    Type: "movie",
-    Response: "True",
-  },
-  {
-    Title: "Batman Begins",
-    Year: "2005",
-    Rated: "PG-13",
-    Released: "15 Jun 2005",
-    Runtime: "140 min",
-    Genre: "Action, Adventure",
-    Director: "Christopher Nolan",
-    Writer:
-      "Bob Kane (characters), David S. Goyer (story), Christopher Nolan (screenplay), David S. Goyer (screenplay)",
-    Actors: "Christian Bale, Michael Caine, Liam Neeson, Katie Holmes",
-    Plot: "After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from the corruption that Scarecrow and the League of Shadows have cast upon it.",
-    Language: "English, Urdu, Mandarin",
-    Country: "USA, UK",
-    Awards: "Nominated for 1 Oscar. Another 15 wins & 66 nominations.",
-    Poster:
-      "http://ia.media-imdb.com/images/M/MV5BNTM3OTc0MzM2OV5BMl5BanBnXkFtZTYwNzUwMTI3._V1_SX300.jpg",
-    Metascore: "70",
-    imdbRating: "8.3",
-    imdbVotes: "972,584",
-    imdbID: "tt0372784",
-    Type: "movie",
-    Response: "True",
-  },
-  {
-    Title: "Avatar",
-    Year: "2009",
-    Rated: "PG-13",
-    Released: "18 Dec 2009",
-    Runtime: "162 min",
-    Genre: "Action, Adventure, Fantasy",
-    Director: "James Cameron",
-    Writer: "James Cameron",
-    Actors: "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
-    Plot: "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
-    Language: "English, Spanish",
-    Country: "USA, UK",
-    Awards: "Won 3 Oscars. Another 80 wins & 121 nominations.",
-    Poster:
-      "http://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
-    Metascore: "83",
-    imdbRating: "7.9",
-    imdbVotes: "876,575",
-    imdbID: "tt0499549",
-    Type: "movie",
-    Response: "True",
-  },
-];
+///////////////////////////// 7. CAS //////////////////////////////////////////////
+// const watchList = [
+//   {
+//     Title: "Inception",
+//     Year: "2010",
+//     Rated: "PG-13",
+//     Released: "16 Jul 2010",
+//     Runtime: "148 min",
+//     Genre: "Action, Adventure, Crime",
+//     Director: "Christopher Nolan",
+//     Writer: "Christopher Nolan",
+//     Actors: "Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page, Tom Hardy",
+//     Plot: "A thief, who steals corporate secrets through use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO.",
+//     Language: "English, Japanese, French",
+//     Country: "USA, UK",
+//     Awards: "Won 4 Oscars. Another 143 wins & 198 nominations.",
+//     Poster:
+//       "http://ia.media-imdb.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
+//     Metascore: "74",
+//     imdbRating: "8.8",
+//     imdbVotes: "1,446,708",
+//     imdbID: "tt1375666",
+//     Type: "movie",
+//     Response: "True",
+//   },
+//   {
+//     Title: "Interstellar",
+//     Year: "2014",
+//     Rated: "PG-13",
+//     Released: "07 Nov 2014",
+//     Runtime: "169 min",
+//     Genre: "Adventure, Drama, Sci-Fi",
+//     Director: "Christopher Nolan",
+//     Writer: "Jonathan Nolan, Christopher Nolan",
+//     Actors: "Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow",
+//     Plot: "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+//     Language: "English",
+//     Country: "USA, UK",
+//     Awards: "Won 1 Oscar. Another 39 wins & 132 nominations.",
+//     Poster:
+//       "http://ia.media-imdb.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX300.jpg",
+//     Metascore: "74",
+//     imdbRating: "8.6",
+//     imdbVotes: "910,366",
+//     imdbID: "tt0816692",
+//     Type: "movie",
+//     Response: "True",
+//   },
+//   {
+//     Title: "The Dark Knight",
+//     Year: "2008",
+//     Rated: "PG-13",
+//     Released: "18 Jul 2008",
+//     Runtime: "152 min",
+//     Genre: "Action, Adventure, Crime",
+//     Director: "Christopher Nolan",
+//     Writer:
+//       "Jonathan Nolan (screenplay), Christopher Nolan (screenplay), Christopher Nolan (story), David S. Goyer (story), Bob Kane (characters)",
+//     Actors: "Christian Bale, Heath Ledger, Aaron Eckhart, Michael Caine",
+//     Plot: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.",
+//     Language: "English, Mandarin",
+//     Country: "USA, UK",
+//     Awards: "Won 2 Oscars. Another 146 wins & 142 nominations.",
+//     Poster:
+//       "http://ia.media-imdb.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
+//     Metascore: "82",
+//     imdbRating: "9.0",
+//     imdbVotes: "1,652,832",
+//     imdbID: "tt0468569",
+//     Type: "movie",
+//     Response: "True",
+//   },
+//   {
+//     Title: "Batman Begins",
+//     Year: "2005",
+//     Rated: "PG-13",
+//     Released: "15 Jun 2005",
+//     Runtime: "140 min",
+//     Genre: "Action, Adventure",
+//     Director: "Christopher Nolan",
+//     Writer:
+//       "Bob Kane (characters), David S. Goyer (story), Christopher Nolan (screenplay), David S. Goyer (screenplay)",
+//     Actors: "Christian Bale, Michael Caine, Liam Neeson, Katie Holmes",
+//     Plot: "After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from the corruption that Scarecrow and the League of Shadows have cast upon it.",
+//     Language: "English, Urdu, Mandarin",
+//     Country: "USA, UK",
+//     Awards: "Nominated for 1 Oscar. Another 15 wins & 66 nominations.",
+//     Poster:
+//       "http://ia.media-imdb.com/images/M/MV5BNTM3OTc0MzM2OV5BMl5BanBnXkFtZTYwNzUwMTI3._V1_SX300.jpg",
+//     Metascore: "70",
+//     imdbRating: "8.3",
+//     imdbVotes: "972,584",
+//     imdbID: "tt0372784",
+//     Type: "movie",
+//     Response: "True",
+//   },
+//   {
+//     Title: "Avatar",
+//     Year: "2009",
+//     Rated: "PG-13",
+//     Released: "18 Dec 2009",
+//     Runtime: "162 min",
+//     Genre: "Action, Adventure, Fantasy",
+//     Director: "James Cameron",
+//     Writer: "James Cameron",
+//     Actors: "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
+//     Plot: "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+//     Language: "English, Spanish",
+//     Country: "USA, UK",
+//     Awards: "Won 3 Oscars. Another 80 wins & 121 nominations.",
+//     Poster:
+//       "http://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
+//     Metascore: "83",
+//     imdbRating: "7.9",
+//     imdbVotes: "876,575",
+//     imdbID: "tt0499549",
+//     Type: "movie",
+//     Response: "True",
+//   },
+// ];
 
 // const nolanMovies = watchList.filter(
 //   (el) => el.Director === "Christopher Nolan"
@@ -765,7 +765,7 @@ const watchList = [
 //   (prev, curr) => +prev + +curr / nolanRatings.length
 // );
 
-const mockData = [1, 23, 5645, 767, 657, 455, 34543];
+// const mockData = [1, 23, 5645, 767, 657, 455, 34543];
 // console.log(sum);
 
 // const customMovieFunction = (movieArray) => {
@@ -840,10 +840,162 @@ const mockData = [1, 23, 5645, 767, 657, 455, 34543];
 
 // console.log("33" * 3);
 
-function reversingNames(name1, name2) {
-  for (let i = name2.length - 1; i >= 0; i--) {
-    if (name1[i]) console.log(name1[i], i);
-    console.log(name2[i], i);
-  }
-}
-reversingNames("nerma", "aldinaaaaaaaaaaaaaaaaaaaa");
+// function reversingNames(name1, name2) {
+//   for (let i = name2.length - 1; i >= 0; i--) {
+//     if (name1[i]) console.log(name1[i], i);
+//     console.log(name2[i], i);
+//   }
+// }
+// reversingNames("nerma", "aldin");
+//////////////////////////////////////////////// 8. CAS /////////////////////////////////////////////////////
+/* 
+1. Zadatak
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4. Zadatak
+Kvadrirati one brojeve koje imaju index 0,3,5.
+
+6. Zadatak
+Napraviti novi niz koji filtrira postojeci i vraca novi sa parnim elementima.
+
+7. Zadatak
+Napraviti novi niz koji filtrira postojeci i vraca novi sa onim elementima starog niza,
+gde je drugo slovo e.
+const words = ['televizor', 'daljinski', 'telefon', 'voda', 'ranac', 'stolica'];
+
+8. Zadatak
+Napraviti novi niz koji filtrira postojeci i vraca novi sa onim elementima cija
+je duzina >= 6.
+
+9. Zadatak
+Napraviti novi niz koji filtrira postojeci i vraca novi sa onim elementima ciji je tip "boolean';.
+const booleans = [true, false, true, false];
+
+10. Zadatak
+Preko funkcije napraviti niz koji se sastoji iz parnih brojeva manjih ili jednakih 50 postojeceg niza.
+
+11. Zadatak
+Sabrati sve godine tj. elemente niza a nakon toga podeliti sa brojem elemenata.
+tj. vratiti prosecnu starost godina.
+
+12. Zadatak
+Write a function that converts an array of values from miles to kilometres using the map method.
+In the end, add the kilometres up in a new variable called "totalDistanceInKilometers"; and
+return this variable.
+
+13. Zadatak
+From the array of numbers, choose even double even numbers and
+compute the sum using Array&#39;s filter, map and reduce methods.
+
+14. Zadatak
+Iz niza od 10 elemenata izracunati sumu parnih brojeva niza.
+*/
+
+// Prvi deo. Napraviti pomocni niz koji ce sadrzati elemente od oba niza.
+// Drugi deo. Napraviti jos jedan pomocni niz koji ce iz prvog dodatnog niza uzeti parne brojeve.
+// Treci deo. U drugom pomocnom nizu umetnuti na prva dva mesta 10 i 20.
+// Funkcija na kraju treba da vrati dva napravljena pomocna niza.
+
+// const DATA1 = [2, 26, 38, 75, 11, 29];
+// const DATA2 = [4, 6, 5, 10, 33, 52, 75];
+// const DATA3 = [5, 1, 12, 83, 80, 96, 100];
+// const DATA4 = [3, 1, 2, 62, 44, 17, 5];
+// const DATA5 = [4, 6, 5, 10, 33, 52, 75];
+
+// const firstAssignment = (array1, array2) => {
+//   const combined = array1.concat(array2); // [..array1, ...array2]
+//   const filteredArray = combined.filter((el) => el % 2 === 0);
+//   filteredArray.unshift(10, 20);
+//   return { combined, filteredArray };
+// };
+
+// console.log(firstAssignment(DATA3, DATA4));
+
+// 2. Zadatak
+// Napraviti novi niz koji sadrzi kvadrate elemenata postojeceg niza:
+// const numbers2 = [2, 5, 10, 3, 4, 8];
+
+// const powNumbers = (array) => {
+// let powedNumbers = array.map((el) => el * el);
+// return powedNumbers;
+// return array.map((el) => el * el);
+// };
+
+// function powNumber(el) {
+//   return el * el;
+// }
+// const shortPow = (array) => array.map(powNumber);
+
+// console.log(shortPow(numbers2));
+
+// () => clgklasjdklasjdklasjdkasjdk, asjdklasdjklsa;
+
+// 3. Zadatak
+// Napraviti novi niz koji sadrzi kvadratne korene elemenata postojeceg niza.
+
+// const numbers = [4, 9, 16, 25, 36];
+
+// Math.sqrt();
+
+// const squareNumbers = (array) => array.map((el) => Math.sqrt(el));
+
+// console.log(numbers);
+// console.log(squareNumbers(numbers));
+
+// 5. Zadatak
+// Napraviti funkciju koja pravi niz koji ce iz postojeceg napraviti novi uz ispunjenje uslova:
+// value > 2 => value * 7
+// value >2 and value <8 => (value*4)/2
+// Ostale vrednosti da ne uzima u obzir
+// I na kraju treba novi niz vratiti sa godinama >10.
+
+const numbers = [3, 5, 10, 13, 22, 523, 10, 4, 6, 16, 19];
+
+const customAssignment = (array) => {
+  let result = array.map((el) => {
+    if (el > 2) return el * 7;
+    else if (el > 2 && el < 8) return (el * 4) / 2;
+  });
+};
