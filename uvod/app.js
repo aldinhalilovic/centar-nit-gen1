@@ -849,61 +849,12 @@ const miniCalculator = () => {
 // reversingNames("nerma", "aldin");
 //////////////////////////////////////////////// 8. CAS /////////////////////////////////////////////////////
 /* 
-1. Zadatak
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 4. Zadatak
 Kvadrirati one brojeve koje imaju index 0,3,5.
 
 6. Zadatak
 Napraviti novi niz koji filtrira postojeci i vraca novi sa parnim elementima.
-
-7. Zadatak
-Napraviti novi niz koji filtrira postojeci i vraca novi sa onim elementima starog niza,
-gde je drugo slovo e.
-const words = ['televizor', 'daljinski', 'telefon', 'voda', 'ranac', 'stolica'];
 
 8. Zadatak
 Napraviti novi niz koji filtrira postojeci i vraca novi sa onim elementima cija
@@ -913,24 +864,11 @@ je duzina >= 6.
 Napraviti novi niz koji filtrira postojeci i vraca novi sa onim elementima ciji je tip "boolean';.
 const booleans = [true, false, true, false];
 
-10. Zadatak
-Preko funkcije napraviti niz koji se sastoji iz parnih brojeva manjih ili jednakih 50 postojeceg niza.
-
 11. Zadatak
 Sabrati sve godine tj. elemente niza a nakon toga podeliti sa brojem elemenata.
 tj. vratiti prosecnu starost godina.
 
-12. Zadatak
-Write a function that converts an array of values from miles to kilometres using the map method.
-In the end, add the kilometres up in a new variable called "totalDistanceInKilometers"; and
-return this variable.
 
-13. Zadatak
-From the array of numbers, choose even double even numbers and
-compute the sum using Array&#39;s filter, map and reduce methods.
-
-14. Zadatak
-Iz niza od 10 elemenata izracunati sumu parnih brojeva niza.
 */
 
 // Prvi deo. Napraviti pomocni niz koji ce sadrzati elemente od oba niza.
@@ -991,11 +929,161 @@ Iz niza od 10 elemenata izracunati sumu parnih brojeva niza.
 // Ostale vrednosti da ne uzima u obzir
 // I na kraju treba novi niz vratiti sa godinama >10.
 
-const numbers = [3, 5, 10, 13, 22, 523, 10, 4, 6, 16, 19];
+// const numbers = [3, 5, 10, 13, 22, 523, 10, 4, 6, 16, 19];
 
-const customAssignment = (array) => {
-  let result = array.map((el) => {
-    if (el > 2) return el * 7;
-    else if (el > 2 && el < 8) return (el * 4) / 2;
-  });
-};
+// const customAssignment = (array) => {
+//   let result = array.map((el) => {
+//     if (el > 2) return el * 7;
+//     else if (el > 2 && el < 8) return (el * 4) / 2;
+//   });
+// };
+
+// 7. Zadatak
+// Napraviti novi niz koji filtrira postojeci i vraca novi sa onim elementima starog niza,
+// gde je drugo slovo e.
+
+// ["t", "e", "l", "e", "f", "o", "n"];
+
+// const words = ["televizor", "daljinski", "telefon", "voda", "ranac", "stolica"];
+
+// const secondLetterE = (array) => array.filter((el) => el[1] === "e");
+// console.log(secondLetterE(words));
+
+// 13. Zadatak
+// From the array of numbers, choose even ,double even numbers and
+// compute the sum using Array's filter, map and reduce methods.
+
+// const arrayExample = [3, 6, 10, 82, 93, 105, 42, 28, 52];
+
+// const comination = (array) => {
+//   const filtered = array.filter((el) => el % 2 === 0);
+//   const doubled = filtered.map((el) => el * 2);
+//   const suma = doubled.reduce((prev, curr) => prev * curr);
+//   return suma;
+// };
+
+// // console.log(comination(arrayExample));
+
+// const niz = [5, 4, 7, 5];
+
+// console.log(niz.reduce((prev, curr) => prev * curr));
+
+// 12. Zadatak
+// Write a function that converts an array of values from miles to kilometres using the map method.
+// In the end, add the kilometres up in a new variable called "totalDistanceInKilometers"; and
+// return this variable.
+
+// const niz = [73, 100, 88, 105, 110, 200];
+
+// const milesToKm = (array) => {
+//   const kilometres = array.map((mile) => mile * 1.61);
+//   const totalDistanceInKilometers = kilometres.reduce(
+//     (prev, curr) => prev + curr
+//   );
+
+//   return totalDistanceInKilometers;
+// };
+
+// // const noviNiz = milesToKm(niz);
+// const nekiDrugiNiz = milesToKm;
+// console.log(nekiDrugiNiz(niz));
+// // console.log(Math.floor(noviNiz));
+
+// 10. Zadatak
+// Preko funkcije napraviti niz koji se sastoji iz parnih brojeva manjih ili jednakih od n.
+
+// const arrayExample = [3, 6, 10, 82, 93, 105, 42, 28, 52, 50, 51, 22, 83];
+
+// const lowEvenNumbers = (array, n) =>
+//   array.filter((el) => el % 2 === 0 && el <= n);
+
+// console.log(lowEvenNumbers(arrayExample, 100));
+
+/// DOMACI ZADATAK///////////////////////////
+
+// 14. Zadatak
+// Iz niza elemenata izracunati sumu parnih brojeva niza.
+//////////////////////////////////////////////////////////////////
+//  2. Zadatak
+// Napraviti funkciju koja ispituje neki niz (argument).
+// Ako produkt ima u zalihama vise od 20 treba:
+// Treba datom produktu smanjiti cenu za 20%
+// Ako produkt ima u zalihama vise od 40 treba:
+// Treba datom produktu smanjiti cenu za 40%
+// U slucaju da u zalihama ima 20 i manje kolicine,
+// cena se ne menja.
+
+// const products = [
+//   {
+//     id: 1,
+//     name: "ARSENAL 22/23 HOME JERSEY",
+//     price: 50,
+//     imgUrl:
+//       "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/450ddf1b5943474fa472ae25009dfed0_9366/ARSENAL_22-23_HOME_JERSEY_Y_Red_HA5339_01_laydown.jpg",
+//     currency: "EUR",
+//     quantity: 41,
+//   },
+//   {
+//     id: 2,
+//     name: "ARSENAL CONDIVO 22 TRAINING TOP",
+//     price: 65,
+//     imgUrl:
+//       "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/32f9a996849147b284c1ae94009678a1_9366/Arsenal_Condivo_22_Training_Top_Blue_HC1252_01_laydown.jpg",
+//     currency: "EUR",
+//     quantity: 12,
+//   },
+//   {
+//     id: 3,
+//     name: "ARSENAL BEANIE",
+//     price: 23,
+//     imgUrl:
+//       "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d8589fb63d02499db805ae7a00cf5273_9366/Arsenal_Beanie_Black_HM9965_01_standard.jpg",
+//     currency: "EUR",
+//     quantity: 7,
+//   },
+//   {
+//     id: 4,
+//     name: "ARSENAL ANTHEM JACKET",
+//     price: 120,
+//     imgUrl:
+//       "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2db81ab8d14d4817a659ae8c01155d2e_9366/Arsenal_Anthem_Jacket_Blue_HF4030_21_model.jpg",
+//     currency: "EUR",
+//     quantity: 36,
+//   },
+//   {
+//     id: 5,
+//     name: "ARSENAL TRAVEL HOODIE",
+//     price: 85,
+//     imgUrl:
+//       "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/44d076827f3d4ea08c6bae85012f97bc_9366/Arsenal_Travel_Hoodie_Black_HF4031_01_laydown.jpg",
+//     currency: "EUR",
+//     quantity: 0,
+//   },
+//   {
+//     id: 6,
+//     name: "ARSENAL FC 93-94 JERSEY",
+//     price: 85,
+//     imgUrl:
+//       "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/edf2037f434d46479c96adbd0085ce75_9366/Arsenal_FC_93-94_Jersey_Yellow_HK5626_01_laydown.jpg",
+//     currency: "EUR",
+//     quantity: 68,
+//   },
+//   {
+//     id: 7,
+//     name: "ARSENAL DNA CAP",
+//     price: 23,
+//     imgUrl:
+//       "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/80b51f1feee344479c1eae760142da56_9366/Arsenal_DNA_Cap_Black_HM9968_01_standard.jpg",
+//     currency: "EUR",
+//     quantity: 4,
+//   },
+//   {
+//     id: 8,
+//     name: "ARSENAL TRAVEL BACKPACK",
+//     price: 65,
+//     imgUrl:
+//       "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c7371783770f41e98afeae9a00a5a2c1_9366/Arsenal_Travel_Backpack_Black_HM9967_01_standard.jpg",
+//     currency: "EUR",
+//     quantity: 14,
+//   },
+// ];
