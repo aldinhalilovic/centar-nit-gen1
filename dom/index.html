@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div
+      style="
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div
+        style="
+          background-color: whitesmoke;
+          border: 5px solid black;
+          border-radius: 10px;
+          width: 20%;
+          height: 50%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+        "
+      >
+        <div class="displayArea" id="displayArea"></div>
+        <div
+          style="
+            height: 100%;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+          "
+        >
+          <div class="buttonRows">
+            <button class="numbers">
+              <h1>AC</h1>
+            </button>
+            <button class="numbers"><h1>+/-</h1></button>
+            <button class="numbers"><h1>%</h1></button>
+            <button class="numbers"><h1>/</h1></button>
+          </div>
+          <div class="buttonRows">
+            <button class="numbers"><h1>7</h1></button>
+            <button class="numbers"><h1>8</h1></button>
+            <button class="numbers"><h1>9</h1></button>
+            <button class="numbers"><h1>*</h1></button>
+          </div>
+          <div class="buttonRows">
+            <button class="numbers"><h1>4</h1></button>
+            <button class="numbers"><h1>5</h1></button>
+            <button class="numbers"><h1>6</h1></button>
+            <button class="numbers"><h1>-</h1></button>
+          </div>
+          <div class="buttonRows">
+            <button class="numbers"><h1>1</h1></button>
+            <button class="numbers"><h1>2</h1></button>
+            <button class="numbers"><h1>3</h1></button>
+            <button class="numbers"><h1>+</h1></button>
+          </div>
+          <div class="buttonRows">
+            <button class="numbers zero">
+              <h1>0</h1>
+            </button>
+            <button class="numbers"><h1>.</h1></button>
+            <button class="numbers" style="background-color: red">
+              <h1>=</h1>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

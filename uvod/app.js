@@ -1015,7 +1015,7 @@ tj. vratiti prosecnu starost godina.
 
 // const products = [
 //   {
-//     id: 1,
+//     id: 1.1,
 //     name: "ARSENAL 22/23 HOME JERSEY",
 //     price: 50,
 //     imgUrl:
@@ -1087,3 +1087,112 @@ tj. vratiti prosecnu starost godina.
 //     quantity: 14,
 //   },
 // ];
+// console.log(products);
+
+// const checkProducts = (nizObjekata) => {
+//   nizObjekata.map((el) => {
+//     if (el.quantity > 40) {
+//       el.price *= 0.6;
+//     } else if (el.quantity > 20) {
+//       el.price *= 0.8;
+//     }
+//   });
+//   return nizObjekata;
+// };
+
+// console.log(checkProducts(products));
+
+// const mockData = [
+//   {
+//     id: 1,
+//     name: "nerma",
+//     lastname: "trece",
+//     subject: "math",
+//     age: 30,
+//   },
+//   {
+//     id: 2,
+//     name: "danilo",
+//     lastname: "trece",
+//     subject: "science",
+//     age: 18,
+//   },
+//   {
+//     id: 3,
+//     name: "seid",
+//     lastname: "trece",
+//     subject: "chemistry",
+//     age: 12,
+//   },
+//   {
+//     id: 4,
+//     name: "ibrahim",
+//     lastname: "trece",
+//     subject: "english",
+//     age: 19,
+//   },
+//   {
+//     id: 5,
+//     name: "vahid",
+//     lastname: "trece",
+//     subject: "geo",
+//     age: 26,
+//   },
+//   {
+//     id: 6,
+//     name: "aldin",
+//     lastname: "trece",
+//     subject: "bio",
+//     age: 23,
+//   },
+//   {
+//     id: 7,
+//     name: "muhamed",
+//     lastname: "trece",
+//     subject: "fiz",
+//     age: 10,
+//   },
+//   {
+//     id: 8,
+//     name: "camil",
+//     lastname: "trece",
+//     subject: "france",
+//     age: 20,
+//   },
+//   {
+//     id: 9,
+//     name: "aldin",
+//     lastname: "trece",
+//     subject: "filozofija",
+//     age: 13,
+//   },
+// ];
+
+// const classRoom = (array) => {
+//   let newArray = array.filter((el) => {
+//     return el.age > 20;
+//   });
+//   return newArray;
+// };
+
+// console.log(classRoom(mockData));
+
+// const filteredStudents = (argument1) => {
+//   let nesto = argument1.filter((el) => el.id % 2 !== 0);
+//   return nesto;
+// };
+
+// console.log(filteredStudents(mockData));
+
+// const changeData = (argument2) => {
+//   return argument2.map((al) => {
+//     return {
+//       ...al,
+//       id: al.id - 1,
+//       age: al.age * 3,
+//       laptop: "neki",
+//     };
+//   });
+// };
+
+// console.log(changeData(mockData));
