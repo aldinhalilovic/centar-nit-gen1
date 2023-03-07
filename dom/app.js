@@ -27,3 +27,5 @@ for (let i = 0; i < buttoni.length; i++) {
     nekaDrugaFunkcija(value);
   });
 }
+
+// nesto nije kaok treba
