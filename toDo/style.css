@@ -1,0 +1,94 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.head {
+  background-color: rgb(53, 53, 155);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  color: white;
+}
+
+.head h1 {
+  padding-left: 100px;
+}
+
+.head #filter {
+  margin-right: 150px;
+  width: 300px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 2px;
+}
+
+.menu {
+  width: 40vw;
+  height: auto;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 50px;
+  border: 2px solid rgb(196, 188, 188);
+  padding-left: 20px;
+}
+
+.menu .input {
+  height: 50px;
+  width: 400px;
+  background: none;
+}
+
+.menu .input .first {
+  height: 4.2vh;
+  background: none;
+  padding-left: 10px;
+}
+
+.menu .input .submit {
+  height: 4.5vh;
+  width: auto;
+  text-transform: capitalize;
+  font-size: medium;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.menu .text {
+  width: 95%;
+  color: rgba(0, 0, 0, 0.669);
+  border-top: 2px solid rgb(196, 188, 188);
+  border-left: 2px solid rgb(196, 188, 188);
+  border-right: 2px solid rgb(196, 188, 188);
+  background: none;
+}
+
+.menu .text .item {
+  border-bottom: 2px solid rgb(196, 188, 188);
+  display: flex;
+  padding-left: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+  background: none;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.menu .text .x {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  color: red;
+}
