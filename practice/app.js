@@ -111,39 +111,147 @@
 // Prebrojati koliko se puta u unetom stringu pojavljuje slovo "M" (i veliko i malo). Npr. za
 // "Mama ima momu", dobija se rezultat 5.
 
-let string = "Mama ima momu";
+// let string = "Mama ima momu";
 
-const checkLetter = (someString) => {
-  let numberMs = 0;
-  for (let m in someString) {
-    // console.log(someString[m]);
-    if (someString[m] === "m" || someString[m] === "M") {
-      numberMs += 1;
-    }
-  }
-  return numberMs;
-};
+// const checkLetter = (someString) => {
+//   let numberMs = 0;
+//   for (let m in someString) {
+//     // console.log(someString[m]);
+//     if (someString[m] === "m" || someString[m] === "M") {
+//       numberMs += 1;
+//     }
+//   }
+//   return numberMs;
+// };
 
 // console.log(checkLetter(string));
 
 // Ispitati da li u unetom stringu ima više malih ili velikih slova. Slova koja se koriste u stringu
 // pripadaju isključivo engleskoj abecedi.
 
-let stringNeki = "Ako JA SAD ovako PISEM koliko CE MALIH slova DA ima";
+// let stringNeki = "Ako JA SAD ovako PISEM koliko CE MALIH slova DA ima";
 
-const checkCases = (string) => {
-  let malaSlova = 0;
-  let velikaSlova = 0;
+// const checkCases = (string) => {
+//   let malaSlova = 0;
+//   let velikaSlova = 0;
 
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] !== " ") {
-      if (string[i] === string[i].toUpperCase()) {
-        velikaSlova++;
-      } else malaSlova++;
-    }
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i] !== " ") {
+//       if (string[i] === string[i].toUpperCase()) {
+//         velikaSlova++;
+//       } else malaSlova++;
+//     }
+//   }
+
+//   return `Malih slova ima ${malaSlova}, a velikih ${velikaSlova}`;
+// };
+
+// console.log(checkCases(stringNeki));
+
+///////////////////////////////////////////////////////////////////OOP//////////////////////////////////////////////////////////////////////////
+
+// console.log({
+//   name: "Aldin",
+//   lastName: "Halilovic",
+// });
+
+// let classRoom = {
+//   numberOfPeople: 6,
+//   teacher: "Aldin",
+// };
+
+// console.log(classRoom);
+// console.log(classRoom.hasOwnProperty("ucenik"));
+
+// const createNewObject = (name, lastName) => {
+//   // let newObject = {};
+//   // newObject.name = name;
+//   // newObject.lastName = lastName;
+//   const newObject = {
+//     name: name,
+//     lastName,
+//   };
+//   return newObject;
+// };
+
+// console.log(createNewObject("ALdin", "Halilovic"));
+
+// let person = createNewObject("aldin", "halilovic");
+
+// console.log(person);
+// console.log(`cao ${person.name}`);
+
+class Animal {
+  name = "Aldin";
+  age = 21;
+
+  // constructor(ime, godine, owner) {
+  //   this.name = ime;
+  //   this.age = godine;
+  //   this.owner = owner;
+  //   this.lastname = owner;
+  // }
+
+  writeAges() {
+    return this.age;
   }
 
-  return `Malih slova ima ${malaSlova}, a velikih ${velikaSlova}`;
-};
+  nestoTrece(godine) {
+    this.age = godine;
+  }
+}
 
-console.log(checkCases(stringNeki));
+// const someAnimal = new Animal("aaaa", 30, "Aldin");
+const someAnimal = new Animal();
+
+// console.log(someAnimal);
+// someAnimal.writeAges();
+// someAnimal.nestoTrece(52);
+// someAnimal.writeAges();
+
+// console.log(someAnimal);
+
+class Dog extends Animal {
+  bark;
+
+  constructor(arg1) {
+    super();
+    this.bark = arg1;
+  }
+}
+
+const pas = new Dog("aw aw");
+// console.log(pas.writeAges());
+
+class School {
+  static name = "NIT";
+  static nekaFun() {
+    console.log("staticna vrednost");
+  }
+
+  constructor(students) {
+    this.students = students;
+  }
+}
+
+let skola = new School(30);
+// console.log(skola);
+// console.log(School.name);
+// School.nekaFun();
+
+class Shop {
+  #profit = 30;
+  proizvod = 40;
+
+  getProfit() {
+    return this.#profit;
+  }
+}
+
+const prodavnica = new Shop();
+console.log(prodavnica);
+// console.log(prodavnica.proizvod);
+// console.log(prodavnica.);
+
+let noviProfit = prodavnica.getProfit();
+console.log(noviProfit);
