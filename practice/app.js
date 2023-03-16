@@ -248,10 +248,84 @@ class Shop {
   }
 }
 
-const prodavnica = new Shop();
-console.log(prodavnica);
+// const prodavnica = new Shop();
+// console.log(prodavnica);
 // console.log(prodavnica.proizvod);
 // console.log(prodavnica.);
 
-let noviProfit = prodavnica.getProfit();
-console.log(noviProfit);
+// let noviProfit = prodavnica.getProfit();
+// console.log(noviProfit);
+
+////////////////////////////////novi cas//////////////////////////////////
+
+class Car {
+  mark;
+  #speed = 120;
+
+  constructor(markName) {
+    this.mark = markName;
+  }
+
+  getSpeed() {
+    return this.#speed;
+  }
+
+  fastUp() {
+    console.log(this.#speed);
+    this.#speed += 20;
+    console.log(this.#speed);
+  }
+
+  slowDown() {
+    this.#speed -= 10;
+  }
+
+  stop() {
+    this.#speed = 0;
+  }
+}
+
+const mojNoviAuto = new Car("skoda");
+
+// console.log(mojNoviAuto);
+// console.log(mojNoviAuto.getSpeed());
+// mojNoviAuto.fastUp();
+// console.log(mojNoviAuto.getSpeed());
+// mojNoviAuto.fastUp();
+// console.log(mojNoviAuto.getSpeed());
+// mojNoviAuto.fastUp();
+// console.log(mojNoviAuto.getSpeed());
+// mojNoviAuto.fastUp();
+// console.log(mojNoviAuto.getSpeed());
+// mojNoviAuto.slowDown();
+// mojNoviAuto.slowDown();
+// mojNoviAuto.slowDown();
+// mojNoviAuto.slowDown();
+// console.log(mojNoviAuto.getSpeed());
+
+// mojNoviAuto.fastUp();
+
+class Bus extends Car {
+  sedista = 50;
+
+  constructor(markName) {
+    super(markName);
+  }
+}
+
+const newBus = new Bus("lasta");
+
+console.log(newBus);
+console.log(newBus.getSpeed());
+newBus.fastUp();
+newBus.fastUp();
+newBus.fastUp();
+newBus.fastUp();
+newBus.fastUp();
+newBus.fastUp();
+newBus.fastUp();
+newBus.slowDown();
+
+console.log(newBus.getSpeed());
+newBus.stop();
+console.log(newBus.getSpeed());
