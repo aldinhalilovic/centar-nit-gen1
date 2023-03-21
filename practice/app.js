@@ -181,28 +181,28 @@
 // console.log(person);
 // console.log(`cao ${person.name}`);
 
-class Animal {
-  name = "Aldin";
-  age = 21;
+// class Animal {
+//   name = "Aldin";
+//   age = 21;
 
-  // constructor(ime, godine, owner) {
-  //   this.name = ime;
-  //   this.age = godine;
-  //   this.owner = owner;
-  //   this.lastname = owner;
-  // }
+//   // constructor(ime, godine, owner) {
+//   //   this.name = ime;
+//   //   this.age = godine;
+//   //   this.owner = owner;
+//   //   this.lastname = owner;
+//   // }
 
-  writeAges() {
-    return this.age;
-  }
+//   writeAges() {
+//     return this.age;
+//   }
 
-  nestoTrece(godine) {
-    this.age = godine;
-  }
-}
+//   nestoTrece(godine) {
+//     this.age = godine;
+//   }
+// }
 
 // const someAnimal = new Animal("aaaa", 30, "Aldin");
-const someAnimal = new Animal();
+// const someAnimal = new Animal();
 
 // console.log(someAnimal);
 // someAnimal.writeAges();
@@ -211,42 +211,42 @@ const someAnimal = new Animal();
 
 // console.log(someAnimal);
 
-class Dog extends Animal {
-  bark;
+// class Dog extends Animal {
+//   bark;
 
-  constructor(arg1) {
-    super();
-    this.bark = arg1;
-  }
-}
+//   constructor(arg1) {
+//     super();
+//     this.bark = arg1;
+//   }
+// }
 
-const pas = new Dog("aw aw");
+// const pas = new Dog("aw aw");
 // console.log(pas.writeAges());
 
-class School {
-  static name = "NIT";
-  static nekaFun() {
-    console.log("staticna vrednost");
-  }
+// class School {
+//   static name = "NIT";
+//   static nekaFun() {
+//     console.log("staticna vrednost");
+//   }
 
-  constructor(students) {
-    this.students = students;
-  }
-}
+//   constructor(students) {
+//     this.students = students;
+//   }
+// }
 
-let skola = new School(30);
+// let skola = new School(30);
 // console.log(skola);
 // console.log(School.name);
 // School.nekaFun();
 
-class Shop {
-  #profit = 30;
-  proizvod = 40;
+// class Shop {
+//   #profit = 30;
+//   proizvod = 40;
 
-  getProfit() {
-    return this.#profit;
-  }
-}
+//   getProfit() {
+//     return this.#profit;
+//   }
+// }
 
 // const prodavnica = new Shop();
 // console.log(prodavnica);
@@ -258,34 +258,34 @@ class Shop {
 
 ////////////////////////////////novi cas//////////////////////////////////
 
-class Car {
-  mark;
-  #speed = 120;
+// class Car {
+//   mark;
+//   #speed = 120;
 
-  constructor(markName) {
-    this.mark = markName;
-  }
+//   constructor(markName) {
+//     this.mark = markName;
+//   }
 
-  getSpeed() {
-    return this.#speed;
-  }
+//   getSpeed() {
+//     return this.#speed;
+//   }
 
-  fastUp() {
-    console.log(this.#speed);
-    this.#speed += 20;
-    console.log(this.#speed);
-  }
+//   fastUp() {
+//     console.log(this.#speed);
+//     this.#speed += 20;
+//     console.log(this.#speed);
+//   }
 
-  slowDown() {
-    this.#speed -= 10;
-  }
+//   slowDown() {
+//     this.#speed -= 10;
+//   }
 
-  stop() {
-    this.#speed = 0;
-  }
-}
+//   stop() {
+//     this.#speed = 0;
+//   }
+// }
 
-const mojNoviAuto = new Car("skoda");
+// const mojNoviAuto = new Car("skoda");
 
 // console.log(mojNoviAuto);
 // console.log(mojNoviAuto.getSpeed());
@@ -305,27 +305,27 @@ const mojNoviAuto = new Car("skoda");
 
 // mojNoviAuto.fastUp();
 
-class Bus extends Car {
-  sedista = 50;
+// class Bus extends Car {
+//   sedista = 50;
 
-  constructor(markName) {
-    super(markName);
-  }
-}
+//   constructor(markName) {
+//     super(markName);
+//   }
+// }
 
-const newBus = new Bus("lasta");
+// const newBus = new Bus("lasta");
 
-console.log(newBus);
-console.log(newBus.getSpeed());
-newBus.fastUp();
-newBus.fastUp();
-newBus.fastUp();
-newBus.fastUp();
-newBus.fastUp();
-newBus.fastUp();
-newBus.fastUp();
-newBus.slowDown();
+// console.log(newBus);
+// console.log(newBus.getSpeed());
+// newBus.fastUp();
+// newBus.fastUp();
+// newBus.fastUp();
+// newBus.fastUp();
+// newBus.fastUp();
+// newBus.fastUp();
+// newBus.fastUp();
+// newBus.slowDown();
 
-console.log(newBus.getSpeed());
-newBus.stop();
-console.log(newBus.getSpeed());
+// console.log(newBus.getSpeed());
+// newBus.stop();
+// console.log(newBus.getSpeed());
