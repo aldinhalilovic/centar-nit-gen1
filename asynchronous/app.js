@@ -168,19 +168,77 @@
 //   .then(() => console.log(a))
 //   .catch((error) => console.log("Greska " + error));
 
-function getData() {
-  let a;
-  fetch("https://dummyjson.com/products")
-    .then((res) => res.json())
-    .then((el) => (a = el))
-    .then(() => console.log(a.products[0].images))
-    .catch((error) => console.log("Greska " + error));
-
-  return a;
-}
-
-const data = getData();
+// const data = getData();
 // console.log(data);
 // if (data) {
 //   console.log(data, "aa");
 // }
+
+// function resolveAfter2Seconds() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve("resolved");
+//     }, 2000);
+//   });
+
+// async function asyncCall() {
+//   console.log("calling");
+//   const result = await resolveAfter2Seconds();
+//   console.log(result);
+//   // Expected output: "resolved"
+// }
+
+// asyncCall();
+
+// function asyncCall() {
+//   console.log("calling");
+//   const result = resolveAfter2Seconds();
+//   console.log(result.then((el) => console.log(el)));
+//   // Expected output: "resolved"
+// }
+
+// asyncCall();
+
+// try {
+//   getData();
+//   nekasestafunkcija();
+// } catch (error) {
+//   console.log("Ovo je error ", error);
+// }
+
+// async function getData() {
+//   let a = await fetch("https://jsonplaceholder.typicode.com/posts");
+//   let response = await a.json();
+//   let data = response.slice(0, 20);
+//   let evenIds = data.filter((el) => el.id % 2 === 0);
+//   let practice = evenIds.map((el) => {
+//     return { ...el, id: el.id++ };
+//   });
+//   console.log(evenIds);
+//   console.log(practice);
+// }
+
+// getData();
+
+// const BASE_URL = "https://dummyjson.com/products";
+
+// function getData() {
+//   fetch(BASE_URL)
+//     .then((res) => res.json())
+//     .then((el) => (a = el))
+//     .then(() => console.log(a.products[0].images))
+//     .catch((error) => console.log("Greska " + error));
+// }
+
+// console.log(async () => await getData());
+
+const getProducts = async () => {
+  const data = await fetch("https://dummyjson.com/products?limit=100").then(
+    (res) => res.json()
+  );
+  console.log(data);
+  console.log(data.limit);
+  console.log(data.products);
+};
+
+getProducts();
