@@ -329,3 +329,11 @@
 // console.log(newBus.getSpeed());
 // newBus.stop();
 // console.log(newBus.getSpeed());
+
+const getData = () => {
+  fetch("https://dummyjson.com/carts/1")
+    .then((res) => res.json())
+    .then(console.log);
+};
+
+getData();
